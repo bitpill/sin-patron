@@ -128,3 +128,10 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
+
+# Ignorar archivos CSS generados
+*.css
+*.css.map
+
+# Ignorar la carpeta node_modules
+node_modules/

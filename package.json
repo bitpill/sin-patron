@@ -1,0 +1,15 @@
+{
+  "name": "sin-patron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "sass scss/style.scss css/style.css --style compressed",
+    "watch": "sass --watch scss/style.scss:css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.68.0"
+  }
+}
