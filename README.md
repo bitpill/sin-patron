@@ -1,2 +1,2 @@
 # sin-patron
-Pagina web en para Sin Patrón
+Pagina web en para Sin Patrón.
