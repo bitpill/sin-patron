@@ -2,3 +2,170 @@
 $dark-color: #313135;
 $darker-color: #1c1c1e;
 $brand-color: #6d3fd2;
+$side-bar-width: 160px;
+$top-header-height: 140px;
+$main-font: "Syne", Helvetica, sans-serif;
+$text-font: "Andada Pro", serif;
+
+// Reset
+body {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth; /* Habilita el desplazamiento suave */
+}
+
+// Layout
+.logo-sidebar{
+  width: $side-bar-width;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:flex-start;
+  position: fixed;
+}
+
+.logo{
+  height: $top-header-height;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.slogan-container{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertical-text{
+  width: auto;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+
+  .side-text{
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 700;
+    color: $dark-color;
+    transform: rotate(-90deg);
+    width: auto;
+    flex: 0 0 auto;
+    text-transform: uppercase;
+  }
+}
+
+.main-container {
+  margin-left: $side-bar-width;
+  padding-left: 40px;
+}
+
+#home-section{
+  height: 100vh;
+  padding-top: $top-header-height;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .start-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    font-family: $text-font;
+    color: $darker-color;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $darker-color;
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    top: 40%;
+  }
+
+  h1{
+    font-family: $main-font;
+    font-weight: 500;
+    font-size: 90px;
+    line-height: 80px;
+    color: $dark-color;
+    margin: 0;
+
+    span{
+      color: $brand-color;
+    }
+  }
+
+  .email-text{
+    font-family: $main-font;
+    font-size: 12px;
+    font-weight: 700;
+    color: $brand-color;
+    text-transform: uppercase;
+  }
+}
+
+#menu-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  .text-block{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 120px;
+    font-family: $text-font;
+    color: $darker-color;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid $darker-color;
+    border-radius: 50%;
+  }
+
+  .vertical-buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 225px;
+  }
+}
+
+.menu-button {
+  height: 50px;
+  border: 1px solid $darker-color;
+  font-family: $main-font;
+  font-weight: 800;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $darker-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px;
+  border-radius: 25px;
+  box-shadow: 2px 2px 0 0 $darker-color;
+}

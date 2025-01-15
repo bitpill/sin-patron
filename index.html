@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Proyecto Básico HTML & SASS</title>
+  <title>Sin Patrón</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Andada+Pro:wght@400;500;700&family=Syne:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,25 +16,27 @@
     </div>
     <div class="slogan-container">
       <div class="vertical-text">
-        <p>From Argentina to the world :)</p>
+        <p class="side-text">From Argentina to the world :)</p>
       </div>
       <img src="assets/images/long-arrow.svg" alt="A long arrow">
     </div>
   </div>
   <main class="main-container">
-    <section class="home-section">
-      <a class="start-button" href="#">Start</a>
-      <h1>At <span>Sin Patrón</span> we design products thatimprove the dailylives of people</h1>
-      <p>sabrina@sin-patron.com.ar</p>
+    <section id="home-section">
+      <a class="start-button" href="#menu-section">Start</a>
+      <h1>At <span>Sin Patrón</span> <br>we design <br>products that <br>improve the daily <br>lives of people</h1>
+      <p class="email-text">sabrina@sin-patron.com.ar</p>
     </section>
-    <section class="menu-section">
-      <p>Start</p>
+    <section id="menu-section">
+      <div class="text-block">
+        <p>Start</p>
+      </div>
       <img src="assets/images/open-branch.svg" alt="User flow connections">
        <div class="vertical-buttons">
         <a class="menu-button" href="#">Portfolio</a>
         <a class="menu-button" href="#">About us</a>
        </div>
-       <img src="assets/images/open-branch.svg" alt="User flow connections">
+       <img src="assets/images/close-branch.svg" alt="User flow connections">
        <a class="menu-button" href="#">What we do</a>
        <img src="assets/images/arrow-right.svg" alt="User flow connections">
     </section>
