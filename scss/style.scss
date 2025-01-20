@@ -3,12 +3,14 @@ $white: #fff;
 $dark-color: #313135;
 $darker-color: #1c1c1e;
 $brand-color: #6d3fd2;
+$brand-light-color: #956E99;
 $bkg-gradient-blue: #D3D6FA;
 $bkg-gradient-orange: #FC8357;
 $side-bar-width: 160px;
 $top-header-height: 140px;
 $main-font: "Syne", Helvetica, sans-serif;
 $text-font: "Andada Pro", serif;
+$postit-font: "inter", Helvetica, sans-serif;
 
 // Reset
 body {
@@ -140,8 +142,15 @@ html {
 #menuSection {
   height: 100vh;
   display: flex;
-  align-items: center;
-  gap: 16px;
+  flex-direction: column;
+  justify-content: center;
+
+  .menu-flow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+  }
 
   .text-block{
     display: flex;
@@ -170,7 +179,9 @@ html {
 .menu-button {
   height: 50px;
   border: 1px solid $darker-color;
+  color: $darker-color;
   font-family: $main-font;
+  font-size: 14px;
   font-weight: 800;
   text-transform: uppercase;
   text-decoration: none;
@@ -181,4 +192,66 @@ html {
   padding: 0 20px;
   border-radius: 25px;
   box-shadow: 2px 2px 0 0 $darker-color;
+}
+
+.contact-us-box {
+  height: 140px;
+  width: 200px;
+  border: 1px solid $darker-color;
+  border-radius: 16px;
+  box-shadow: 2px 2px 0 0 $darker-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    margin: 0;
+  }
+
+  .title{
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 5px;
+    color: $darker-color;
+  }
+
+  .email-text {
+    color: $brand-color;
+  }
+}
+
+.postit {
+  width: 135px;
+  height: 135px;
+  background-color: #F9B8FF;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  -webkit-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+  box-shadow: 0px 5px 8px 0px rgba(0,0,0,0.15);
+
+  p{
+    margin: 0;
+    font-family: $postit-font;
+    font-size: 10px;
+    line-height: 14px;
+    color: $dark-color;
+    font-weight: 500;
+  }
+
+  .signature {
+    font-size: 8px;
+    color: $brand-light-color;
+  }
+}
+
+.postit-top {
+  margin: 0 0 20px 200px;
+}
+
+.postit-bottom {
+  margin: 15px 0 0 400px;
 }
