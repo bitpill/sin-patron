@@ -85,17 +85,26 @@ html {
 }
 
 .main-container {
+  height: 100vh;
   margin-left: $side-bar-width;
   padding-left: 40px;
+  scroll-snap-type: y mandatory; /* Activar el scroll snapping en dirección vertical */
+  overflow-y: scroll; /* Habilitar el scroll vertical */
+  scroll-behavior: smooth; /* Movimiento suave entre secciones */
+
+  section{
+    height: 100vh; /* Cada sección ocupa toda la altura de la pantalla */
+    scroll-snap-align: start; /* Alinea el borde superior de cada sección */
+  }
 }
 
 #homeSection {
-  height: 100vh;
   padding-top: $top-header-height;
   padding-bottom: 70px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  position: relative;
 
   .start-button {
     display: flex;
@@ -141,7 +150,6 @@ html {
 }
 
 #menuSection {
-  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
