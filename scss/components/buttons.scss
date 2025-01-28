@@ -1,0 +1,48 @@
+// Buttons
+@use '../base/variables.scss' as vars;
+
+.back-button {
+    margin-top: 10px;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.start-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    font-family: vars.$text-font;
+    color: vars.$white;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    border: 1px solid vars.$white;
+    border-radius: 50%;
+    position: absolute;
+    right: 100px;
+    top: 40%;
+}
+
+.menu-button {
+    height: 50px;
+    border: 1px solid vars.$darker-color;
+    color: vars.$darker-color;
+    font-family: vars.$main-font;
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: vars.$darker-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20px;
+    border-radius: 25px;
+    box-shadow: 2px 2px 0 0 vars.$darker-color;
+}

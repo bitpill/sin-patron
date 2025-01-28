@@ -1,0 +1,62 @@
+// Home
+@use '../base/variables.scss' as vars;
+
+.home-container {
+    height: 100vh;
+    margin-left: vars.$side-bar-width;
+    padding-left: 40px;
+    scroll-snap-type: y mandatory;
+    /* Activar el scroll snapping en dirección vertical */
+    overflow-y: scroll;
+    /* Habilitar el scroll vertical */
+    scroll-behavior: smooth;
+    /* Movimiento suave entre secciones */
+
+    section {
+        height: 100vh;
+        /* Cada sección ocupa toda la altura de la pantalla */
+        scroll-snap-align: start;
+        /* Alinea el borde superior de cada sección */
+    }
+}
+
+#homeSection {
+    padding-top: vars.$top-header-height;
+    padding-bottom: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+
+    .email-text {
+        font-family: vars.$main-font;
+        font-size: 12px;
+        font-weight: 700;
+        color: vars.$brand-color;
+        text-transform: uppercase;
+    }
+}
+
+#menuSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    margin: 0;
+    padding: 0;
+
+    .menu-flow {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .vertical-buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 225px;
+    }
+}

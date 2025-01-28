@@ -1,0 +1,22 @@
+// About Us
+@use '../base/variables.scss' as vars;
+
+.page-container {
+    margin-left: vars.$side-bar-width;
+    padding-left: 40px;
+
+    h1 {
+        font-size: 80px;
+        line-height: 70px;
+    }
+}
+
+.page-header {
+    height: vars.$top-header-height;
+    display: flex;
+    align-items: center;
+}
+
+.sub-section {
+    padding-top: 40px;
+}
