@@ -24,6 +24,10 @@
     line-height: 22px;
     font-weight: 400;
     color: vars.$darker-color;
+
+    span {
+        font-weight: 700;
+    }
 }
 
 .info-block {
@@ -87,4 +91,28 @@
 
 .connector-2 {
     margin: -70px 0 0 70px;
+}
+
+#portfolio {
+    display: flex;
+    padding-bottom: 0;
+
+    h1 {
+        margin-bottom: 32px;
+    }
+
+    .text {
+        margin-bottom: 60px;
+    }
+
+    .left-block {
+        max-width: 500px;
+    }
+
+    .right-block {
+        flex-grow: 1;
+        display: flex;
+        justify-content: center;
+        margin-top: -60px;
+    }
 }

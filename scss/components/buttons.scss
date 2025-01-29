@@ -46,3 +46,20 @@
     border-radius: 25px;
     box-shadow: 2px 2px 0 0 vars.$darker-color;
 }
+
+.portfolio-link {
+    font-family: vars.$text-font;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 32px;
+    color: vars.$brand-color;
+    text-decoration: none;
+    line-height: 32px;
+    position: relative;
+
+    img {
+        position: absolute;
+        left: 115px;
+        bottom: 4px;
+    }
+}
