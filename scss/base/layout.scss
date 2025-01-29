@@ -79,3 +79,19 @@ h1 {
         color: vars.$brand-color;
     }
 }
+
+.page-container {
+
+    h1 {
+        font-size: 70px;
+        line-height: 60px;
+    }
+}
+
+h2 {
+    font-family: vars.$text-font;
+    font-weight: 500;
+    font-size: 30px;
+    color: vars.$darker-color;
+    margin: 0;
+}
