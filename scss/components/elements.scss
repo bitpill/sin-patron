@@ -1,6 +1,47 @@
 // Cards
 @use '../base/variables.scss' as vars;
 
+// ------------------------------------------------------- Home Word Change
+
+.word-container {
+    height: 100px;
+    background-color: vars.$light-blue-color;
+    border-radius: 50px;
+    padding: 0 40px;
+    margin-left: -40px;
+    margin-top: 24px;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    transition: width 0.4s ease-in-out;
+    box-sizing: content-box;
+
+    .word-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        position: relative;
+
+        .word {
+            position: absolute;
+            left: 0;
+            top: 4px;
+            opacity: 0;
+            transform: translateY(100%);
+            transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+            white-space: nowrap;
+            font-size: 70px;
+            font-weight: 700;
+
+            &.active {
+                opacity: 1;
+                transform: translateY(0);
+                position: relative;
+            }
+        }
+    }
+}
+
 // ------------------------------------------------------- Postits
 
 .postit {
@@ -118,7 +159,7 @@
         font-weight: 500;
     }
 
-    &.-start{
+    &.-start {
         width: 70px;
         height: 70px;
         padding: 0;

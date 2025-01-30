@@ -27,3 +27,39 @@ cursors.forEach(cursor => {
   const randomInterval = Math.random() * 5000 + 3000;
   setInterval(() => moveCursor(cursor), randomInterval);
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const words = document.querySelectorAll(".word");
+  const container = document.querySelector(".word-container");
+  let index = 0;
+
+  function updateContainerWidth(word) {
+      requestAnimationFrame(() => {
+          container.style.width = `${word.offsetWidth}px`;
+      });
+  }
+
+  function changeWord() {
+      const currentWord = words[index];
+      currentWord.classList.remove("active");
+
+      index = (index + 1) % words.length;
+      const nextWord = words[index];
+
+      nextWord.classList.add("active");
+
+      // Ajustar el ancho del contenedor
+      updateContainerWidth(nextWord);
+  }
+
+  // Setear el ancho inicial
+  updateContainerWidth(words[0]);
+
+  setInterval(changeWord, 2000); // Cambia cada 2 segundos
+});
+
+
+
+
