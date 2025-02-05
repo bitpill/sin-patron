@@ -16,17 +16,28 @@
     cursor: pointer;
     width: 120px;
     height: 120px;
-    font-family: vars.$text-font;
+    font-family: vars.$main-font;
     color: vars.$white;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
     border: 1px solid vars.$white;
     border-radius: 50%;
-    position: absolute;
-    right: 100px;
-    top: 40%;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 140%;
+        height: 1px;
+        background-color: white;
+        transform: rotate(135deg);
+        transition: transform 0.3s ease, width 0.3s ease;
+    }
+
+    &:hover::before {
+        transform: rotate(180deg) translateY(-12px);
+        width: 50%;
+    }
 }
 
 .menu-button {
@@ -45,6 +56,16 @@
     padding: 0 20px;
     border-radius: 25px;
     box-shadow: 2px 2px 0 0 vars.$darker-color;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+        box-shadow: 0 0 4px 1px vars.$white;
+        background: rgba(vars.$brand-color, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        color: vars.$white;
+        border-color: vars.$white;
+    }
 }
 
 .portfolio-link {

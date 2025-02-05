@@ -88,21 +88,33 @@
     justify-content: center;
     width: 120px;
     height: 120px;
-    font-family: vars.$text-font;
+    font-family: vars.$main-font;
     color: vars.$darker-color;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    text-transform: uppercase;
     text-decoration: none;
     border: 1px solid vars.$darker-color;
     border-radius: 50%;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        width: 140%;
+        height: 1px;
+        background-color: vars.$darker-color;
+        transform: rotate(135deg);
+    }
 }
 
 // ------------------------------------------------------- Contact Box
 
 .contact-us-box {
     height: 140px;
-    width: 200px;
+    width: 230px;
+    background: rgba(vars.$white, 0.3); /* Color blanco con transparencia */
+    backdrop-filter: blur(10px); /* Efecto esmerilado */
+    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
     border: 1px solid vars.$darker-color;
     border-radius: 16px;
     box-shadow: 2px 2px 0 0 vars.$darker-color;
@@ -116,14 +128,15 @@
     }
 
     .title {
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 700;
         margin-bottom: 5px;
         color: vars.$darker-color;
     }
 
     .email-text {
-        color: vars.$brand-color;
+        font-weight: 500;
+        color: vars.$darker-color;
     }
 }
 
@@ -136,6 +149,7 @@
     top: 0;
     left: 0;
     transition: transform 4s ease-in-out;
+    z-index: 3;
 }
 
 // ------------------------------------------------------- Cards
