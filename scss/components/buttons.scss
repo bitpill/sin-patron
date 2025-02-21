@@ -1,11 +1,12 @@
 // Buttons
 @use '../base/variables.scss' as vars;
 
-.back-button {
-    margin-top: 10px;
+.logo-back-button {
     border: none;
     background: transparent;
     cursor: pointer;
+    padding: 0;
+    height: 36px;
 }
 
 .start-button {

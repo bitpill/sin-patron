@@ -141,35 +141,3 @@
     transition: transform 4s ease-in-out;
     z-index: 3;
 }
-
-// ------------------------------------------------------- Cards
-
-.card {
-    border: 2px solid vars.$darker-color;
-    border-radius: 16px;
-    width: 125px;
-    height: 135px;
-    padding: 16px 12px;
-    margin: 8px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    p {
-        margin: 0;
-        font-family: vars.$postit-font;
-        font-size: 10px;
-        line-height: 14px;
-        color: vars.$dark-color;
-        font-weight: 500;
-    }
-
-    &.-start {
-        width: 70px;
-        height: 70px;
-        padding: 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-}
