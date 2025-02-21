@@ -110,32 +110,22 @@
 // ------------------------------------------------------- Contact Box
 
 .contact-us-box {
-    height: 140px;
-    width: 230px;
-    background: rgba(vars.$white, 0.3); /* Color blanco con transparencia */
-    backdrop-filter: blur(10px); /* Efecto esmerilado */
-    -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
-    border: 1px solid vars.$darker-color;
-    border-radius: 16px;
-    box-shadow: 2px 2px 0 0 vars.$darker-color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
 
     p {
         margin: 0;
+        font-family: vars.$main-font;
+        text-transform: uppercase;
+        font-size: 14px;
     }
 
     .title {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 5px;
+        font-weight: 800;
+        margin-bottom: 4px;
         color: vars.$darker-color;
     }
 
     .email-text {
-        font-weight: 500;
+        font-weight: 700;
         color: vars.$darker-color;
     }
 }
