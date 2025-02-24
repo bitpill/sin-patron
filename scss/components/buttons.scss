@@ -1,12 +1,17 @@
 // Buttons
 @use '../base/variables.scss' as vars;
 
-.logo-back-button {
+.home-button {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background-color: vars.$light-blue-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
     border: none;
-    background: transparent;
     cursor: pointer;
-    padding: 0;
-    height: 36px;
 }
 
 .start-button {
@@ -41,20 +46,16 @@
     }
 }
 
-.menu-button {
+.main-button {
+    display: inline-block;
     height: 50px;
     border: 1px solid vars.$darker-color;
-    color: vars.$darker-color;
     font-family: vars.$main-font;
     font-size: 14px;
-    font-weight: 800;
-    text-transform: uppercase;
+    font-weight: 700;
     text-decoration: none;
     color: vars.$darker-color;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0 20px;
+    padding: 15px 32px;
     border-radius: 25px;
     box-shadow: 2px 2px 0 0 vars.$darker-color;
     transition: all 0.1s ease-out;

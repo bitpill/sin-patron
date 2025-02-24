@@ -69,14 +69,28 @@ html {
 
 .page-container {
     margin-left: vars.$side-bar-width;
-    padding-top: vars.$top-header-height;
     padding-left: 40px;
     padding-right: 64px;
-}
 
-.sub-section {
-    padding-top: 40px;
-    padding-bottom: 200px;
+    .page-header {
+        height: vars.$top-header-height;
+        display: flex;
+        align-items: center;
+    }
+
+    .page-section {
+        display: flex;
+
+        .left-content {
+            padding-top: 40px;
+            width: 550px;
+            margin-right: 80px;
+        }
+
+        .right-content {
+            flex-grow: 2;
+        }
+    }
 }
 
 // ------------------------------------------------------- Titles & text
@@ -99,6 +113,7 @@ h1 {
     h1 {
         font-size: 70px;
         line-height: 60px;
+        margin-bottom: 32px;
     }
 }
 
@@ -116,6 +131,7 @@ h2 {
     line-height: 22px;
     font-weight: 400;
     color: vars.$darker-color;
+    margin: 16px 0;
 
     span {
         font-weight: 700;

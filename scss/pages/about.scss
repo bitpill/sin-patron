@@ -1,2 +1,66 @@
 // Aboout us
 @use '../base/variables.scss' as vars;
+
+.about-images {
+    position: relative;
+
+    .about-img-01 {
+        position: absolute;
+        top: 200px;
+        left: 10px;
+        width: 260px;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .about-img-02 {
+        position: absolute;
+        left: 200px;
+        width: 320px;
+        height: auto;
+        border-radius: 30px;
+    }
+
+    .about-img-03 {
+        position: absolute;
+        top: 350px;
+        left: 130px;
+        width: 380px;
+        height: auto;
+    }
+
+    .about-img-04 {
+        position: absolute;
+        top: 30px;
+        width: 260px;
+        height: auto;
+    }
+}
+
+.professionals-list {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 60px 0;
+
+    .professionals-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-left: 1px solid vars.$brand-color;
+        padding: 0 24px;
+
+        &:first-child {
+            padding-left: 0;
+            border-left: none;
+        }
+
+        p {
+            margin: 8px 0 0 0;
+            font-family: vars.$text-font;
+            font-size: 16px;
+            font-weight: 400;
+            color: vars.$darker-color;
+        }
+    }
+}
