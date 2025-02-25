@@ -1,0 +1,50 @@
+// Work
+@use '../base/variables.scss' as vars;
+
+#work {
+
+    .left-content {
+        padding-top: 16px;
+    }
+}
+
+.pagination {
+    display: flex;
+    margin-bottom: 32px;
+    align-items: center;
+
+    .page {
+        font-family: vars.$text-font;
+        color: vars.$brand-grey-color;
+        font-weight: 400;
+        margin: 0 8px;
+        text-decoration: none;
+
+        &.active {
+            color: vars.$brand-color;
+            font-weight: 700;
+        }
+    }
+
+    .divider {
+        margin: 0 8px;
+    }
+}
+
+.work-images {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    padding-top: 50px;
+    position: relative;
+
+    img {
+        height: 350px;
+    }
+
+    .postit {
+        position: absolute;
+        right: 280px;
+        top: 330px;
+    }
+}

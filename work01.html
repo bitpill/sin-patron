@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sin Patrón</title>
+  <!-- Standard favicon -->
+  <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- PNG icons for modern browsers -->
+  <link rel="icon" href="assets/images/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" href="assets/images/favicon-16x16.png" sizes="16x16">
+
+  <!-- Apple Touch Icon -->
+  <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
+
+  <!-- Android/Chrome icon -->
+  <link rel="icon" href="assets/images/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" href="assets/images/android-chrome-512x512.png" sizes="512x512">
+
+  <!-- Manifest for Progressive Web Apps -->
+  <link rel="manifest" href="site.webmanifest">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Andada+Pro:ital,wght@0,400..840;1,400..840&family=Inter:opsz,wght@14..32,500&family=Syne:wght@400..800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="gradient-bkg">
+  </div>
+  <div class="logo-sidebar">
+    <div class="logo">
+      <img src="assets/images/logo.svg" alt="Sin Patrón logo">
+    </div>
+    <div class="slogan-container">
+      <div class="vertical-text">
+        <p class="side-text">From Argentina to the world :)</p>
+      </div>
+      <img src="assets/images/long-arrow.svg" alt="A long arrow">
+    </div>
+  </div>
+  <main class="page-container">
+    <header class="page-header">
+      <button class="home-button" onclick="window.location.href='index.html'">
+        <img src="assets/images/home.svg" alt="A home icon">
+      </button>
+    </header>
+    <section class="page-section" id="work">
+      <div class="left-content">
+        <div class="pagination">
+          <a class="page active">1</a>
+          <img class="divider" src="assets/images/divider.svg" alt="A thin line">
+          <a class="page" href="work02.html">2</a>
+          <a class="page" href="work03.html">3</a>
+        </div>
+        <h1>Discovery & <br>Research</h1>
+        <div class="text-block">
+          <p class="text">We begin by immersing ourselves in your world. We take the time to truly understand your
+            business, your goals, and most importantly, your users. Through collaborative workshops, in-depth user
+            interviews, and careful competitive analysis, we uncover the insights that form the foundation of our design
+            strategy. This phase is all about getting it right from the start, defining clear project objectives and
+            ensuring we have a shared understanding of the path ahead:</p>
+        </div>
+        <ul class="item-icon-list">
+          <li class="icon-item">
+            <img src="assets/images/benchmark.svg" alt="A crown icon">
+            <p>Benchmark</p>
+          </li>
+          <li class="icon-item">
+            <img src="assets/images/user-persona.svg" alt="Two overlap circles">
+            <p>User persona</p>
+          </li>
+          <li class="icon-item">
+            <img src="assets/images/metrics.svg" alt="Vector edit options">
+            <p>Analize metrics</p>
+          </li>
+          <li class="icon-item">
+            <img src="assets/images/documents.svg" alt="A web layout icon">
+            <p>Document</p>
+          </li>
+        </ul>
+        <div class="page-control">
+          <a class="main-button page-button" href="work02.html">
+            <svg class="icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M20.7806 12.531L14.0306 19.281C13.8899 19.4218 13.699 19.5008 13.5 19.5008C13.301 19.5008 13.1101 19.4218 12.9694 19.281C12.8286 19.1403 12.7496 18.9494 12.7496 18.7504C12.7496 18.5514 12.8286 18.3605 12.9694 18.2198L18.4397 12.7504H3.75C3.55109 12.7504 3.36032 12.6714 3.21967 12.5307C3.07902 12.3901 3 12.1993 3 12.0004C3 11.8015 3.07902 11.6107 3.21967 11.4701C3.36032 11.3294 3.55109 11.2504 3.75 11.2504H18.4397L12.9694 5.78104C12.8286 5.64031 12.7496 5.44944 12.7496 5.25042C12.7496 5.05139 12.8286 4.86052 12.9694 4.71979C13.1101 4.57906 13.301 4.5 13.5 4.5C13.699 4.5 13.8899 4.57906 14.0306 4.71979L20.7806 11.4698C20.8504 11.5394 20.9057 11.6222 20.9434 11.7132C20.9812 11.8043 21.0006 11.9019 21.0006 12.0004C21.0006 12.099 20.9812 12.1966 20.9434 12.2876C20.9057 12.3787 20.8504 12.4614 20.7806 12.531Z" />
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="right-content work-images">
+        <img src="assets/images/work-01.png" alt="A board with research elements">
+        <div class="postit">
+          <p>Let's be concise in the message and purpose of each project. We only have a few seconds to capture their attention.</p>
+          <p class="signature">One of our team</p>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+
+</html>
