@@ -47,7 +47,9 @@
 }
 
 .main-button {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    width: auto;
     height: 50px;
     border: 1px solid vars.$darker-color;
     font-family: vars.$main-font;
@@ -55,18 +57,33 @@
     font-weight: 700;
     text-decoration: none;
     color: vars.$darker-color;
-    padding: 15px 32px;
+    padding: 0 32px;
     border-radius: 25px;
     box-shadow: 2px 2px 0 0 vars.$darker-color;
     transition: all 0.1s ease-out;
 
+    .icon {
+        fill: vars.$darker-color;
+    }
+
     &:hover {
-        box-shadow: 0 0 4px 1px vars.$white;
-        background: rgba(vars.$brand-color, 0.6);
-        backdrop-filter: blur(10px);
-        -webkit-backdrop-filter: blur(10px);
-        color: vars.$white;
-        border-color: vars.$white;
+        box-shadow: 2px 2px 0 0 vars.$brand-color;
+        background-color: vars.$brand-light-color;
+        color: vars.$brand-color;
+        border-color: vars.$brand-color;
+
+        .icon {
+            fill: vars.$brand-color;
+        }
+    }
+
+    &.page-button {
+        padding: 0;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 16px;
     }
 }
 
