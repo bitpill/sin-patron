@@ -33,6 +33,10 @@ html {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    padding: 0;
 }
 
 .slogan-container {
@@ -87,7 +91,7 @@ html {
 
         .left-content {
             padding-top: 40px;
-            width: 600px;
+            max-width: 600px;
             margin-right: 72px;
             display: flex;
             flex-direction: column;
@@ -95,8 +99,9 @@ html {
         }
 
         .right-content {
-            flex-grow: 2;
+            flex-grow: 1;
             padding-right: 16px;
+            overflow: hidden;
         }
 
         .page-control {
