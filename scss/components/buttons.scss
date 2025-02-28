@@ -1,6 +1,13 @@
 // Buttons
 @use '../base/variables.scss' as vars;
 
+button:focus-visible,
+a:focus-visible {
+    outline: none;
+    box-shadow: 0 0 8px vars.$brand-color;
+    border-color: vars.$brand-color;
+}
+
 .home-button {
     width: 56px;
     height: 56px;
