@@ -111,22 +111,27 @@
 
 .contact-us-box {
 
-    p {
-        margin: 0;
+    .title {
+        font-weight: 800;
+        color: vars.$darker-color;
+        margin: 0 0 4px;
         font-family: vars.$main-font;
         font-size: 14px;
         text-transform: uppercase;
     }
 
-    .title {
-        font-weight: 800;
-        margin-bottom: 4px;
-        color: vars.$darker-color;
-    }
-
     .email-text {
         font-weight: 700;
         color: vars.$darker-color;
+        margin: 0;
+        font-family: vars.$main-font;
+        font-size: 14px;
+        text-transform: uppercase;
+
+        &.link {
+            color: vars.$brand-color;
+            display: none;
+        }
     }
 }
 
@@ -148,7 +153,7 @@
     display: flex;
     list-style: none;
     padding: 0;
-    margin: 32px 0 56px;
+    margin: 32px 0 0;
 
     .icon-item {
         display: flex;
